@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\GLWindow.h(15,36): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\GLWindow.h(16,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
   OpenGLEngine.vcxproj -> C:\dev\dotnet\OpenGLEngine\Debug\OpenGLEngine.exe
