@@ -24,25 +24,25 @@ void Camera::keyControl(bool* keys, GLfloat deltaTime)
 
 	if (keys[GLFW_KEY_W])
 	{
-		printf("w\n");
+		//printf("w\n");
 		position += front * velocity;
 	}
 
 	if (keys[GLFW_KEY_S])
 	{
-		printf("s\n");
+		//printf("s\n");
 		position -= front * velocity;
 	}
 
 	if (keys[GLFW_KEY_A])
 	{
-		printf("a\n");
+		//printf("a\n");
 		position -= right * velocity;
 	}
 
 	if (keys[GLFW_KEY_D])
 	{
-		printf("d\n");
+		//printf("d\n");
 		position += right * velocity;
 	}
 }
@@ -75,7 +75,7 @@ glm::mat4 Camera::calculateViewMatrix()
 
 void Camera::update()
 {
-	printf("pos\n");
+	//printf("pos\n");
 	front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
 	front.y = sin(glm::radians(pitch));
 	front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
