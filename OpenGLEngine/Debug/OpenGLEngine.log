@@ -1,21 +1,11 @@
-﻿  Light.cpp
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\Light.cpp(24,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\Light.cpp(25,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\Light.cpp(27,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\Light.cpp(28,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-  Mesh.cpp
-  Shader.cpp
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\Shader.cpp(112,9): warning C4244: 'return': conversion from 'GLuint' to 'GLfloat', possible loss of data
-  main.cpp
+﻿  main.cpp
 C:\dev\dotnet\OpenGLEngine\OpenGLEngine\GLWindow.h(15,36): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
 C:\dev\dotnet\OpenGLEngine\OpenGLEngine\GLWindow.h(16,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(133,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(153,56): warning C4244: '=': conversion from 'GLfloat' to 'GLuint', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(161,4): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(160,4): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(159,4): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(158,22): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-  Generating Code...
-  LINK : C:\dev\dotnet\OpenGLEngine\Debug\OpenGLEngine.exe not found or not built by the last incremental link; performing full link
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(141,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(161,56): warning C4244: '=': conversion from 'GLfloat' to 'GLuint', possible loss of data
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(172,4): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(171,4): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(170,4): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+C:\dev\dotnet\OpenGLEngine\OpenGLEngine\main.cpp(169,22): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   OpenGLEngine.vcxproj -> C:\dev\dotnet\OpenGLEngine\Debug\OpenGLEngine.exe
