@@ -52,6 +52,16 @@ void Camera::mouseControl(GLfloat xChange, GLfloat yChange)
 	xChange *= turnSpeed;
 	yChange *= turnSpeed;
 
+	// Fix random big mouse changes
+	if (abs(xChange) > 360.0f)
+	{
+		xChange = 0.0f;
+	}
+	if (abs(yChange) > 360.0f)
+	{
+		yChange = 0.0f;
+	}
+
 	yaw += xChange;
 	pitch += yChange;
 
@@ -66,6 +76,7 @@ void Camera::mouseControl(GLfloat xChange, GLfloat yChange)
 	}
 
 	update();
+	
 }
 
 glm::mat4 Camera::calculateViewMatrix()

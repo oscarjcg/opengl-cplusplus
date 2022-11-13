@@ -115,7 +115,9 @@ int main()
 	mainWindow.Initialise();
 	CreateObject();
 	CreateShaders();
-	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f, 5.0f, 0.1f);
+	camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), 
+		-90.0f, 0.0f, 
+		5.0f, 0.1f);
 
 	rockTexture = Texture("./Textures/Wood.png");
 	rockTexture.LoadTexture();
@@ -135,6 +137,14 @@ int main()
 
 	glm::mat4 projection = glm::perspective(45.0f, (GLfloat)mainWindow.GetBufferWidth() / (GLfloat)mainWindow.GetBufferHeight(), 0.1f, 100.0f);
 
+
+	// Fix random pressed keys on init
+	mainWindow.GetKeys()[GLFW_KEY_W] = false;
+	mainWindow.GetKeys()[GLFW_KEY_S] = false;
+	mainWindow.GetKeys()[GLFW_KEY_A] = false;
+	mainWindow.GetKeys()[GLFW_KEY_D] = false;
+	
+
 	// Loop until window closed
 	while (!mainWindow.GetShouldCLose())
 	{
@@ -148,7 +158,7 @@ int main()
 
 		camera.keyControl(mainWindow.GetKeys(), deltaTime);
 		camera.mouseControl(mainWindow.GetXChange(), mainWindow.GetYChange());
-
+		
 		// Clear window
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -179,7 +189,7 @@ int main()
 
 		
 
-		model = glm::translate(model, glm::vec3(0.0f, 4.0f, -2.5f));
+		model = glm::translate(model, glm::vec3(0.0f, 0.0f, -2.5f));
 		model = glm::rotate(model, 0.0f * toRadians, glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
 
